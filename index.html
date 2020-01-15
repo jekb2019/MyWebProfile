@@ -11,7 +11,7 @@
       table, th, td{
         margin-left:auto;
         margin-right:auto;
-        border: 1px solid black;
+        border: 1px solid brown;
         border-collapse: collapse;
         padding: 10px;
       }
@@ -29,9 +29,33 @@
       body{
         text-align: center;
       }
+
+      a{
+          color: blue;
+      }
+
+      #dayNightMode{
+
+      }
+
     </style>
   </head>
   <body>
+      <input id="dayNightMode" type="button" name="eyeStrainAdjuster" value="Night mode" onclick="
+        var bodyTag = document.querySelector('body');
+        var aTag = document.querySelector('a');
+        if(this.value === 'Night mode'){
+          bodyTag.style.backgroundColor = 'black';
+          bodyTag.style.color = 'white';
+          this.value = 'Day mode';
+        }else{
+          bodyTag.style.backgroundColor = 'white';
+          bodyTag.style.color = 'black';
+          aTag.style.color = 'blue';
+          this.value = 'Night mode';
+
+        }
+      ">
       <figure>
         <img src="images/my_photo.jpg" alt="" width="300" height="300">
       </figure>
