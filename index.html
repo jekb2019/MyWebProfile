@@ -2,8 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>My Web Profile</title>
+
+    <script>
+      function dayNightMode(self){
+        var bodyTag = document.querySelector('body');
+        if(self.value === 'Night mode'){
+          bodyTag.style.backgroundColor = 'black';
+          bodyTag.style.color = 'white';
+          self.value = 'Day mode';
+          var alist = document.querySelectorAll('a');
+          var i=0;
+          while(i < alist.length){
+            alist[i].style.color = 'powderblue';
+            i++;
+          }
+        }else{
+          bodyTag.style.backgroundColor = 'white';
+          bodyTag.style.color = 'black';
+          self.value = 'Night mode';
+          var alist = document.querySelectorAll('a');
+          var i=0;
+          while(i < alist.length){
+            alist[i].style.color = 'blue';
+            i++;
+          }
+        }
+      }
+    </script>
+
     <style>
+      #pLang, #pTool{
+        color: brown;
+      }
+      a{
+        color:blue;
+      }
       .quote{
         color: coral;
         font-style: italic;
@@ -19,9 +53,6 @@
         text-aline: center;
         list-style: inside;
       }
-      #pLang, #pTool{
-        color: brown;
-      }
       .toSection{
 
         float: right;
@@ -30,31 +61,12 @@
         text-align: center;
       }
 
-      a{
-          color: blue;
-      }
-
-      #dayNightMode{
-
-      }
 
     </style>
   </head>
   <body>
       <input id="dayNightMode" type="button" name="eyeStrainAdjuster" value="Night mode" onclick="
-        var bodyTag = document.querySelector('body');
-        var aTag = document.querySelector('a');
-        if(this.value === 'Night mode'){
-          bodyTag.style.backgroundColor = 'black';
-          bodyTag.style.color = 'white';
-          this.value = 'Day mode';
-        }else{
-          bodyTag.style.backgroundColor = 'white';
-          bodyTag.style.color = 'black';
-          aTag.style.color = 'blue';
-          this.value = 'Night mode';
-
-        }
+        dayNightMode(this)
       ">
       <figure>
         <img src="images/my_photo.jpg" alt="" width="300" height="300">
@@ -99,28 +111,28 @@
       <hr>
 
       <h2 id="education">Education</h2>
-      <table>
-        <caption>Academical Background</caption>
-        <thead>
-          <tr>
-            <th>School</th>
-            <th>Major</th>
-            <th>Period</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Rangitoto College</td>
-            <td>Not Applicable</td>
-            <td>2013 ~ 2017</td>
-          </tr>
-          <tr>
-            <td>University of Auckland</td>
-            <td>Bachelor of Software Engineering</td>
-            <td>2018 ~ present</td>
-          </tr>
-        </tbody>
-      </table>
+        <table>
+          <caption>Academical Background</caption>
+          <thead>
+            <tr>
+              <th>School</th>
+              <th>Major</th>
+              <th>Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rangitoto College</td>
+              <td>Not Applicable</td>
+              <td>2013 ~ 2017</td>
+            </tr>
+            <tr>
+              <td>University of Auckland</td>
+              <td>Bachelor of Software Engineering</td>
+              <td>2018 ~ present</td>
+            </tr>
+          </tbody>
+        </table>
       <a class="toSection" href="#section">[Sections]</a><br>
       <hr>
 
