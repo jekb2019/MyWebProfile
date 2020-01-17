@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>My Web Profile</title>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="dayNightMode.js"></script>
 
     <style>
@@ -36,12 +36,11 @@
         text-align: center;
       }
 
-
     </style>
   </head>
   <body>
       <input id="dayNightMode" type="button" name="eyeStrainAdjuster" value="Night mode" onclick="
-        Body.dayNightMode(this)
+        dayNightMode(this)
       ">
       <figure>
         <img src="images/my_photo.jpg" alt="" width="300" height="300">
