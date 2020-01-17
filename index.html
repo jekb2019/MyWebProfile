@@ -4,32 +4,7 @@
     <meta charset="utf-8">
     <title>My Web Profile</title>
 
-    <script>
-      function dayNightMode(self){
-        var bodyTag = document.querySelector('body');
-        if(self.value === 'Night mode'){
-          bodyTag.style.backgroundColor = 'black';
-          bodyTag.style.color = 'white';
-          self.value = 'Day mode';
-          var alist = document.querySelectorAll('a');
-          var i=0;
-          while(i < alist.length){
-            alist[i].style.color = 'powderblue';
-            i++;
-          }
-        }else{
-          bodyTag.style.backgroundColor = 'white';
-          bodyTag.style.color = 'black';
-          self.value = 'Night mode';
-          var alist = document.querySelectorAll('a');
-          var i=0;
-          while(i < alist.length){
-            alist[i].style.color = 'blue';
-            i++;
-          }
-        }
-      }
-    </script>
+    <script src="dayNightMode.js"></script>
 
     <style>
       #pLang, #pTool{
@@ -66,7 +41,7 @@
   </head>
   <body>
       <input id="dayNightMode" type="button" name="eyeStrainAdjuster" value="Night mode" onclick="
-        dayNightMode(this)
+        Body.dayNightMode(this)
       ">
       <figure>
         <img src="images/my_photo.jpg" alt="" width="300" height="300">
