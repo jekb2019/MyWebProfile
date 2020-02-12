@@ -1,0 +1,14 @@
+
+header{
+  background: url('images/laptop_coffee.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+#whole_wrapper{
+  height: 100%;
+  width: 100%;
+  backdrop-filter: brightness(50%);
+}
