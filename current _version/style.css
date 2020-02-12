@@ -1,0 +1,46 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  background: url('images/laptop_coffee.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+#whole_wrapper{
+  height: 100%;
+  width: 100%;
+  backdrop-filter: brightness(50%);
+}
+
+.ad{
+  width: 300px;
+  height: 200px;
+}
+
+header h1{
+  font-size: 1.5rem;
+  font-weight: normal;
+  display: inline-block;
+  color: lightgrey;
+  float: left;
+  margin: 20px 0px 0px 50px;
+}
+header nav{
+  float: right;
+}
+header nav ul{
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li{
+  color: lightgrey;
+  display: inline-block;
+  list-style: none;
+  margin-right: 50px;
+  margin-top: 20px;
+}
