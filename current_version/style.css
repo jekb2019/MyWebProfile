@@ -2,11 +2,9 @@
   margin: 0;
   padding: 0;
 }
-html,body{
-  margin:0;
-  padding:0;
+html {
+	scroll-behavior: smooth;
 }
-
 #header-wrapper{
   height: 100%;
   width: 100%;
@@ -86,7 +84,7 @@ font-size: 1.1rem;
   max-width: 1000px;
 }
 #about{
-  height: 100vh;
+  height: auto;
 }
 #about-me h2{
   text-align: center;
@@ -120,6 +118,7 @@ font-size: 1.1rem;
   border-radius: 10px;
   margin-top: 40px;
   margin-right: 30px;
+  margin-bottom: 150px;
   width: 300px;
   height: 250px;
   float: left;
@@ -132,6 +131,20 @@ font-size: 1.1rem;
 }
 .box img{
   position: relative;
-  top: 0px;
-  left: 20px;
+  top: 20px;
+  left: 75px;
+}
+#skills{
+
+  clear: both;
+  margin: 0 auto;
+  width:80%;
+  height: 200px;
+  max-width: 1000px;
+}
+#my-skills{
+  width: 1000px;
+  height: 200px;
+  border: solid black 1px;
+  margin: 50px auto;
 }
