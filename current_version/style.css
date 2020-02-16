@@ -35,7 +35,7 @@ header{
 }
 #head-menu li a{
 display: block;
-padding-bottom: 13px; 
+padding-bottom: 13px;
 text-decoration: none;
 color: lightgray;
 font-size: 1.1rem;
@@ -148,7 +148,7 @@ font-size: 1.1rem;
 #my-skills{
   width: 980px;
   height: 300px;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
 
 }
 #myImg{
@@ -215,4 +215,115 @@ font-size: 1.1rem;
 }
 #contact-book, #contact{
   color:white;
+}
+.specific{
+  clear: both;
+  box-sizing: border-box;
+  width: 980px;
+  margin: 0 auto;
+}
+#specific-skills{
+  background-color: #c6bcb6;
+  border: 1px solid #c6bcb6;
+  height: 550px;
+}
+#skill-list{
+  margin: 50px auto;
+  width: 800px;
+}
+#skill-list p{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+#skill-list i{
+  margin-left: 400px;
+  margin-bottom: 10px;
+}
+progress {
+/* style rules */
+width: 800px;
+margin-bottom: 30px;
+background-color:lightgray;
+}
+progress::-webkit-progress-bar {
+/* style rules */
+width: 800px;
+margin-bottom: 30px;
+background-color:lightgray;
+}
+progress::-webkit-progress-value {
+/* style rules */
+width: 800px;
+margin-bottom: 30px;
+background-color:gray;
+}
+progress::-moz-progress-bar {
+/* style rules */
+width: 800px;
+margin-bottom: 30px;
+background-color:gray;
+}
+#specific-education{
+  background-color: #96897f;
+  border: 1px solid #96897f;
+  height: 740px;
+}
+#specific-education i{
+  margin-left: 480px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+.edu-box{
+  margin: 30px auto;
+  width: 600px;
+  height: 170px;
+  background-color: #c6bcb6;
+  border-radius: 10px;
+}
+.edu-box > p{
+  font-size: 1.4rem;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.edu-box small{
+  margin-left: 20px;
+}
+.edu-box hr{
+  margin: 15px 20px;
+  width: 10%;
+  height: 2px;
+  background-color: gray;
+  border:none;
+}
+#specific-contact{
+  background-color: #625750;
+  border: 1px solid #625750;
+  height: 450px;
+}
+#specific-contact > i{
+  color:white;
+  margin-left: 480px;
+  margin-top: 45px;
+}
+#contact-info{
+  width: 500px;
+  height: 210px;
+  margin: 50px auto;
+  border: 1px solid white;
+  padding-top: 25px;
+}
+#contact-info p{
+  color: white;
+  line-height: 2.5;
+  font-size: 1.2rem;
+  text-align: center;
+}
+#contact-info a{
+  color:white;
+}
+#contact-info a:hover{
+  color:lightgray;
+}
+#contact-info i{
+  margin-left: 10px;
 }
