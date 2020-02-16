@@ -73,6 +73,7 @@ font-size: 1.1rem;
   background-color: rgba(220,220,220,0.5);
 }
 .intro-button a{
+  display: block;
   text-decoration: none;
   line-height: 2;
   text-align: center;
@@ -145,7 +146,71 @@ font-size: 1.1rem;
 #my-skills{
   width: 980px;
   height: 300px;
-  border: solid black 1px;
   margin: 50px auto;
 
+}
+#myImg{
+  float: left;
+}
+#skills-container{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width:680px;
+  height:300px;
+  float: left;
+}
+#part1{
+  box-sizing: border-box;
+  height: 120px;
+  width:680;
+  background-color:#e0e2e4;
+}
+#part1 p{
+  font-size: 3rem;
+  font-weight: lighter;
+  margin-left: 40px;
+  line-height: 2;
+}
+#part2{
+  box-sizing: border-box;
+  height: 180px;
+  width:680;
+}
+#part2{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.skill-sections{
+  width: 300px;
+}
+.skill-sections:hover{
+  opacity: 0.9; 
+}
+#skill{
+  background-color: #c6bcb6;
+}
+#education{
+  background-color: #96897f;
+}
+#contact{
+  background-color: #625750;
+}
+.skill-content{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top:20px;
+}
+#puzzle, #cap, #contact-book{
+  margin: 25px 0 0 80px;
+}
+#contact-book, #contact{
+  color:white;
 }
