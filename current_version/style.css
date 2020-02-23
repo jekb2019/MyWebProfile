@@ -225,15 +225,15 @@ font-size: 1.1rem;
 #specific-skills{
   background-color: #c6bcb6;
   border: 1px solid #c6bcb6;
-  height: 550px;
+  height: 450px;
 }
 #skill-list{
   margin: 50px auto;
   width: 800px;
 }
 #skill-list p{
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 8px;
 }
 #skill-list i{
   margin-left: 400px;
@@ -244,29 +244,33 @@ progress {
 width: 800px;
 margin-bottom: 30px;
 background-color:lightgray;
+height: 5px;
 }
 progress::-webkit-progress-bar {
 /* style rules */
 width: 800px;
 margin-bottom: 30px;
 background-color:lightgray;
+height: 5px;
 }
 progress::-webkit-progress-value {
 /* style rules */
 width: 800px;
 margin-bottom: 30px;
 background-color:gray;
+height: 5px;
 }
 progress::-moz-progress-bar {
 /* style rules */
 width: 800px;
 margin-bottom: 30px;
 background-color:gray;
+height: 5px;
 }
 #specific-education{
   background-color: #96897f;
   border: 1px solid #96897f;
-  height: 740px;
+  height: 680px;
 }
 #specific-education i{
   margin-left: 480px;
@@ -274,7 +278,7 @@ background-color:gray;
   margin-bottom: 10px;
 }
 .edu-box{
-  margin: 30px auto;
+  margin: 10px auto;
   width: 600px;
   height: 170px;
   background-color: #c6bcb6;
@@ -299,7 +303,7 @@ background-color:gray;
 #specific-contact{
   background-color: #625750;
   border: 1px solid #625750;
-  height: 450px;
+  height: 400px;
 }
 #specific-contact > i{
   color:white;
@@ -309,7 +313,7 @@ background-color:gray;
 #contact-info{
   width: 500px;
   height: 210px;
-  margin: 50px auto;
+  margin: 20px auto;
   border: 1px solid white;
   padding-top: 25px;
 }
@@ -327,4 +331,7 @@ background-color:gray;
 }
 #contact-info i{
   margin-left: 10px;
+}
+#space{
+  height: 100px;
 }
